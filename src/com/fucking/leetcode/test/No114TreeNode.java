@@ -16,7 +16,7 @@ public class No114TreeNode {
 		flatten(root.right);
 		TreeNode lefTreeNode = root.left;
 		TreeNode rightTreeNode = root.right;
-		if(lefTreeNode == null) {
+		if(lefTreeNode == null) { 
 			return;
 		}
 		TreeNode tempNode = lefTreeNode;
