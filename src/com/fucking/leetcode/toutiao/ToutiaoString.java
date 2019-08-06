@@ -4,6 +4,16 @@ import java.util.Arrays;
 import java.util.function.IntPredicate;
 
 public class ToutiaoString {
+	
+	
+	
+	/**
+	 * 两个字符串相乘 
+	 * 
+	 * @param num1
+	 * @param num2
+	 * @return
+	 */
 	public String multiply(String num1, String num2) {
 		if (num1 == null || num2 == null) {
 			return "0";
@@ -27,34 +37,6 @@ public class ToutiaoString {
 				sBuilder.deleteCharAt(0);
 			} else {
 				break;
-			}
-		}
-		return sBuilder.toString();
-	}
-
-	/**
-	 * 两个字符串相乘 改进
-	 * 
-	 * @param num1
-	 * @param num2
-	 * @return
-	 */
-	public String multiply1(String num1, String num2) {
-		if (num1 == null || num2 == null) {
-			return "0";
-		}
-		int[] result = new int[num1.length() + num2.length()];
-		for (int i = 0; i < num1.length(); i++) {
-			for (int j = 0; j < num2.length(); j++) {
-				int temp = (num1.charAt(i) - '0') * (num2.charAt(j) - '0');
-				result[i + j + 1] += temp % 10;
-				result[i + j] += temp / 10;
-			}
-		}
-		StringBuilder sBuilder = new StringBuilder();
-		for (int i = 0; i < result.length; i++) {
-			if (sBuilder.length() != 0 || result[i] != 0) {
-				sBuilder.append(result[i] + "");
 			}
 		}
 		return sBuilder.toString();
