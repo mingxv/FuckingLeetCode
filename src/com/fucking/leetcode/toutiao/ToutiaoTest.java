@@ -20,4 +20,9 @@ public class ToutiaoTest {
 		boolean result = toutiaoString.checkInclusion("ab", "eidbaooo");
 		System.out.print("checkInclusion = " + result);
 	}
+	
+	public void testMultiply(String num1, String num2) {
+		String resultString = toutiaoString.multiply(num1, num2);
+		System.out.print("multiply = "+ resultString);
+	}
 }

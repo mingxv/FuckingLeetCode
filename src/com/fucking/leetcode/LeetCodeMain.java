@@ -13,6 +13,7 @@ public class LeetCodeMain {
 		ToutiaoTest main = new ToutiaoTest();
 		
 //		main.longestCommonPrefix();
-		main.checkInclusion();
+//		main.checkInclusion();
+		main.testMultiply("123", "456");
 	}
 }
