@@ -7,7 +7,7 @@ package com.fucking.leetcode.test;
  *
  * 1 2 5 3 4 null 6
  */
-public class TreeNodeSolution {
+public class No114TreeNode {
 	public void flatten(TreeNode root) {
 		if(root == null) {
 			return;
