@@ -1,6 +1,6 @@
 package com.fucking.leetcode;
 
-import com.fucking.leetcode.test.MinStack;
+import com.fucking.leetcode.code.MinStack;
 import com.fucking.leetcode.toutiao.ToutiaoTest;
 
 public class LeetCodeMain {

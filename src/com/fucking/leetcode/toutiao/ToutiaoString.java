@@ -5,8 +5,6 @@ import java.util.function.IntPredicate;
 
 public class ToutiaoString {
 	
-	
-	
 	/**
 	 * 两个字符串相乘 
 	 * 

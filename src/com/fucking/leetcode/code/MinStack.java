@@ -1,4 +1,4 @@
-package com.fucking.leetcode.test;
+package com.fucking.leetcode.code;
 
 import java.util.List;
 import java.util.LinkedList;

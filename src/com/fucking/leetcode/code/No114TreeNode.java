@@ -1,4 +1,4 @@
-package com.fucking.leetcode.test;
+package com.fucking.leetcode.code;
 
 /**
  * 给定二叉树，原地展开为链表
