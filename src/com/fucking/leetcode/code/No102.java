@@ -5,7 +5,11 @@ import java.util.List;
 
 import com.fucking.leetcode.entity.TreeNode;
 
-
+/**
+ * 二叉树的层级遍历
+ * @author mingxv
+ *
+ */
 public class No102 {
 
 //	二叉树的层次遍历
