@@ -3,6 +3,8 @@ package com.fucking.leetcode.code;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.fucking.leetcode.entity.TreeNode;
+
 public class No144 {
 	public List<Integer> preorderTraversal(TreeNode root) {
 
@@ -18,18 +20,14 @@ public class No144 {
 		if (root == null) {
 			return;
 		}
-		srcList.add(root.val);
+		if (root.left != null) {
+			srcList.add(root.left.val);
+		}
 		preorder(root.left, srcList);
+		if (root.right != null) {
+			srcList.add(root.right.val);
+		}
 		preorder(root.right, srcList);
 	}
 
-	public class TreeNode {
-		int val;
-		TreeNode left;
-		TreeNode right;
-
-		TreeNode(int x) {
-			val = x;
-		}
-	}
 }
