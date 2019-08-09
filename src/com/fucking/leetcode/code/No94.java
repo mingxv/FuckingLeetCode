@@ -3,24 +3,25 @@ package com.fucking.leetcode.code;
 import java.util.ArrayList;
 import java.util.List;
 
-public class No144 {
-	public List<Integer> preorderTraversal(TreeNode root) {
-
+/**
+ * 二叉树中序遍历
+ * @author mingxv
+ *
+ */
+public class No94 {
+	public List<Integer> inorderTraversal(TreeNode root) {
 		List<Integer> list = new ArrayList<Integer>();
-		if (root != null) {
-			list.add(root.val);
-		}
-		preorder(root, list);
+		tree(root, list);
 		return list;
 	}
 
-	private void preorder(TreeNode root, List<Integer> srcList) {
+	public void tree(TreeNode root, List<Integer> list) {
 		if (root == null) {
 			return;
 		}
-		srcList.add(root.val);
-		preorder(root.left, srcList);
-		preorder(root.right, srcList);
+		tree(root.left, list);
+		list.add(root.val);
+		tree(root.right, list);
 	}
 
 	public class TreeNode {
