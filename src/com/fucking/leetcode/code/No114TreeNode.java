@@ -1,7 +1,5 @@
 package com.fucking.leetcode.code;
 
-import com.fucking.leetcode.entity.TreeNode;
-
 /**
  * 给定二叉树，原地展开为链表
  * 
@@ -18,7 +16,7 @@ public class No114TreeNode {
 		flatten(root.right);
 		TreeNode lefTreeNode = root.left;
 		TreeNode rightTreeNode = root.right;
-		if(lefTreeNode == null) { 
+		if(lefTreeNode == null) {
 			return;
 		}
 		TreeNode tempNode = lefTreeNode;
@@ -28,5 +26,15 @@ public class No114TreeNode {
 		tempNode.right = root.right;
 		root.right = lefTreeNode;
 		root.left = null;
+	}
+
+	public class TreeNode {
+		int val;
+		TreeNode left;
+		TreeNode right;
+
+		TreeNode(int x) {
+			val = x;
+		}
 	}
 }

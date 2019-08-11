@@ -1,6 +1,9 @@
 package com.fucking.leetcode;
 
+import java.util.List;
+
 import com.fucking.leetcode.code.MinStack;
+import com.fucking.leetcode.code.No229;
 import com.fucking.leetcode.toutiao.ToutiaoTest;
 
 public class LeetCodeMain {
@@ -8,7 +11,8 @@ public class LeetCodeMain {
 	public static void main(String[] args) {
 		LeetCodeMain main = new LeetCodeMain();
 //		main.toutiaoTest();
-		main.testMinStack();
+//		main.testMinStack();
+		main.test229();
 	}
 	
 	private void toutiaoTest() {
@@ -40,5 +44,11 @@ public class LeetCodeMain {
 		min.getMin();
 		min.pop();
 		min.getMin();
+	}
+	
+	private void test229() {
+		No229 no = new No229();
+		List<Integer> a = no.majorityElement(new int[] {1,2,3,4,5,1});
+		System.out.print(a);
 	}
 }
