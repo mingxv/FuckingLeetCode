@@ -1,7 +1,5 @@
 package com.fucking.leetcode.code;
 
-import javax.swing.plaf.basic.BasicInternalFrameTitlePane.IconifyAction;
-
 import com.fucking.leetcode.entity.TreeNode;
 
 /**
@@ -17,7 +15,7 @@ import com.fucking.leetcode.entity.TreeNode;
  */
 public class No104 {
 	public int maxDepth(TreeNode root) {
-
+		return tree(root);
 	}
 
 	private int tree(TreeNode root) {
@@ -26,7 +24,6 @@ public class No104 {
 		}
 		int left = tree(root.left);
 		int right = tree(root.right);
-		return root.left != null || root.right != null? tree(root)
-		return tree(root.left) + 1;
+		return Math.max(left, right) + 1;
 	}
 }
