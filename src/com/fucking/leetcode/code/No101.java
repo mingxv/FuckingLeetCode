@@ -1,7 +1,5 @@
 package com.fucking.leetcode.code;
 
-import java.util.ArrayList;
-import java.util.List;
 
 import com.fucking.leetcode.entity.TreeNode;
 
@@ -12,6 +10,8 @@ import com.fucking.leetcode.entity.TreeNode;
  *
  */
 public class No101 {
+	//尝试了中序排列首位比对，空位自动补-1不成立。会有特殊情况 [5,4,1,null,1,null,4,2,null,2,null]
+	
 	public boolean isSymmetric(TreeNode root) {
 		if(root == null) {
 			return true;
@@ -19,6 +19,11 @@ public class No101 {
 		return tree(root.left, root.right);
 	}
 
+	/**
+	 * 左右比对
+	 * @param root
+	 * @return
+	 */
 	private boolean tree(TreeNode left, TreeNode right) {
 		if(left == null && right == null) {
 			return true;
