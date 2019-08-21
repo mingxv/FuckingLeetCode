@@ -22,7 +22,7 @@ public class No231 {
 	}
 	
 	public void test() {
-		boolean result = isPowerOfTwo(2147483646);
+		boolean result = isPowerOfTwo(-2147483646);
 		System.out.print(result);
 	}
 }
