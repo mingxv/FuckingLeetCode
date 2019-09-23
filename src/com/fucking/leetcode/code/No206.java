@@ -13,13 +13,13 @@ public class No206 {
     }
 	
 	private ListNode ln(ListNode head) {
-		if(head == null || head.next == null) {
-			return head;
-		}
-		ListNode next = head.next;
-		ListNode nextnext = next.next;
-		next.next = head;
-		return ln(nextnext);
+//		if(head == null || head.next == null) {
+//			return head;
+//		}
+//		ListNode next = head.next;
+//		ListNode nextnext = next.next;
+//		next.next = head;
+//		return ln(nextnext);
 	}
 
 }
